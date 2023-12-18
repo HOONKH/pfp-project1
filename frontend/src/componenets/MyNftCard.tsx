@@ -83,7 +83,7 @@ const MyNftCard: FC<ImyNftCard> = ({ name, image, tokenId }) => {
 
   return (
     <div className="flex flex-col smash">
-      <ul className="mt-8">
+      <ul className="mt-8 ">
         <NftCard name={name} image={image} tokenId={tokenId} />
       </ul>
       {registedPrice ? (

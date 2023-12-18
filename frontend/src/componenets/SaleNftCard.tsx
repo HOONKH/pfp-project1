@@ -19,6 +19,7 @@ const SaleNftCard: FC<IsaleNftCardProps> = ({
   const { saleNftContract, mintNftContract, web3, account } =
     useOutletContext<ImyOutletContext>();
   const [registedPrice, setRegistedPrice] = useState<number>(0);
+  const [isHover, setIsHover] = useState<boolean>(false);
 
   const getRegistedPrice = async () => {
     try {
